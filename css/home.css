@@ -4,3 +4,22 @@
 @import url('./variables.css');
 
 /*CUSTOM STYLE*/
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--ff-kumbh);
+  font-size: 12px;
+  font-weight: 400;
+  background-image: linear-gradient(
+    to bottom left,
+    var(--clr-softViolet),
+    var(--clr-softBlue)
+  );
+}
+
+.hidden {
+  display: none;
+}
