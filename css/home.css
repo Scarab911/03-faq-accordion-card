@@ -23,3 +23,38 @@ body {
 .hidden {
   display: none;
 }
+.container {
+  display: flex;
+  padding: 10px;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: #fff;
+  gap: 20px;
+}
+.ilustration {
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid grey;
+  line-height: 2rem;
+  padding-right: 5px;
+}
+.img {
+  z-index: 1;
+  position: absolute;
+  left: 77px;
+}
+
+.question::after {
+  content: url(../images/icon-arrow-down.svg);
+  margin-left: 20px;
+}
