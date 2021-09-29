@@ -25,7 +25,6 @@ body {
   border-radius: 15px;
   background-color: #fff;
   position: relative;
-  /* overflow: hidden; */
 }
 .women-container {
   display: inline-block;
@@ -50,13 +49,18 @@ body {
 
 .text-content {
   height: 500px;
-  display: flex;
   float: right;
   width: 40%;
   margin-right: 80px;
+  display: flex;
   flex-direction: column;
-  padding: 60px 10px;
+  justify-content: center;
+  padding: 30px 0px;
 }
+h1 {
+  margin-bottom: 10px;
+}
+
 .qna-box {
   padding: 10px 0;
   border-bottom: 1px solid grey;
@@ -65,7 +69,6 @@ body {
 h2 {
   display: flex;
   justify-content: space-between;
-  /* line-height: 4rem; */
   padding-bottom: 5px;
   padding-right: 5px;
   font-size: 1em;
@@ -98,13 +101,3 @@ p {
 .qna-box.show > p {
   display: block;
 }
-
-/*PSEUDO*/
-/* h2::after {
-  content: url(../images/icon-arrow-down.svg);
-  margin-left: 20px;
-}
-h2:active::after {
-  content: url(../images/icon-arrow-down.svg);
-  transform: rotate(180deg);
-} */
