@@ -108,7 +108,7 @@ h2 .arrow {
   height: 8px;
 }
 
-h2 .arrow.rotate {
+h2.rotate > .arrow {
   transform: rotate(180deg);
 }
 
@@ -119,6 +119,7 @@ p {
 .qna-box.show > p {
   display: block;
   color: var(--clr-darkGreyBlue);
+  animation: slowDraw 0.3s linear;
 }
 /*MEDIA*/
 
@@ -160,5 +161,21 @@ p {
   }
   h1 {
     text-align: center;
+  }
+}
+
+/*ANIMATIONS*/
+
+@keyframes slowDraw {
+  0% {
+    height: 0;
+    opacity: 0;
+  }
+  50% {
+    height: 50%;
+  }
+  100% {
+    height: 100%;
+    opacity: 1;
   }
 }
